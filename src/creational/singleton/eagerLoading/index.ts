@@ -1,4 +1,4 @@
-class Eager {
+export default class Eager {
     private static instance: Eager = new Eager();
     private x: number;
     private y: number;
@@ -12,19 +12,19 @@ class Eager {
         return this.instance;
     }
 
-    getX(): number {
+    public getX(): number {
         return this.x;
     }
 
-    getY(): number{
+    public getY(): number{
         return this.y;
     }
 
-    setX(x: number) {
+    public setX(x: number) {
         this.x = x;
     }
 
-    setY(y: number) {
+    public setY(y: number) {
         this.y = y;
     }
 }
